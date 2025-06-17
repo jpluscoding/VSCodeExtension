@@ -1,0 +1,27 @@
+{
+  "scopeName": "source.jplus",
+  "patterns": [
+    {
+      "name": "comment.line.dollar.jplus",
+      "match": "\\$.*$"
+    },
+    {
+      "name": "keyword.control.jplus",
+      "match": "\\b(useJAVA|PYTHONuse|UseCSHARP|Cplusplus)\\b"
+    },
+    {
+      "name": "variable.other.jplus",
+      "match": "#[a-zA-Z_][a-zA-Z0-9_]*"
+    },
+    {
+      "name": "string.quoted.double.jplus",
+      "begin": "\"",
+      "end": "\""
+    },
+    {
+      "name": "constant.numeric.jplus",
+      "match": "\\b[0-9]+\\b"
+    }
+  ],
+  "uuid": "b5bff8e2-7f2b-4b88-aacd-7f95a8c70389"
+}

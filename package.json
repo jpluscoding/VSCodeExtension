@@ -1,0 +1,65 @@
+{
+  "name": "jplus-support",
+  "displayName": "J+ Language Support",
+  "description": "Provides syntax highlighting and basic support for the J+ programming language.",
+  "version": "0.0.1",
+  "publisher": "stetupdev",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://stetupdev-admin@bitbucket.org/stetupdev/vscodeextension.git"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onLanguage:jplus",
+    "onCommand:jplus.hello"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "jplus",
+        "aliases": [
+          "J+",
+          "jplus"
+        ],
+        "extensions": [
+          ".jplus"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "jplus",
+        "scopeName": "source.jplus",
+        "path": "./syntaxes/jplus.tmLanguage.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "jplus.hello",
+        "title": "J+: Say Hello"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./",
+    "compile": "tsc -p ./",
+    "watch": "tsc --watch -p ./",
+    "pretest": "npm run compile"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "gut": "^0.2.0"
+  }
+}
