@@ -28,6 +28,6 @@ Open .jplus files to see syntax highlighting and use snippets. Use Ctrl+Space fo
 MIT License
 
 ## Repository
-https://bitbucket.org/stetupdev/vscodeextension
+https://github.com/stetupdev/vscodeextension
 
-# Made with ❤️ by [stetupdev](https://bitbucket.org/stetupdev)
+# Made with ❤️ by [stetupdev](https://github.com/stetupdev)

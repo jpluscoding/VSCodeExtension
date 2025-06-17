@@ -2,7 +2,7 @@
   "name": "jplus-support",
   "displayName": "J+ Language Support",
   "description": "Provides syntax highlighting and basic support for the J+ programming language.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "stetupdev",
   "license": "MIT",
   "icon": "logo.png",
